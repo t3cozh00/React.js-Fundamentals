@@ -26,6 +26,14 @@ function AddBook(props) {
 
   const handleSave = () => {
     props.addBook(book);
+    setBook({
+      author: "",
+      isbn: "",
+      price: "",
+      title: "",
+      year: "",
+    });
+
     handleClose();
   };
 
